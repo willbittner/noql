@@ -1,0 +1,3 @@
+﻿namespace NoQL.CEP.NewExpressions
+{
+}

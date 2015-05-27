@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dashx.CEP.Datastructures
+{
+    public class MarketData
+    {
+        public Quote BestBid = new Quote();
+        public Quote BestAsk = new Quote();
+    }
+
+    public class Quote
+    {
+        public enum QuoteType
+        {
+            BID,
+            ASK
+        }
+        public string Symbol { get; set; }
+        public DateTime Date { get; set; }
+        public QuoteType Type { get; set; }
+        public float Price { get; set; }
+        public int SizeHundreds { get; set; }
+        public string Condition { get; set; }
+        public char Exchange { get; set; }
+        public string BrokerBuyCode { get; set; }
+        public string BrokerSellCode { get; set; }
+        public string BrokerIndicatorCodes { get; set; }
+        public string ActionCode { get; set; }     
+    }
+}

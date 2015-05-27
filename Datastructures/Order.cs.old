@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Dashx.CEP.Attributes;
+
+namespace Dashx.CEP.Datastructures
+{
+
+    public enum OrdStatus
+    {
+        New = 48,
+        PartiallyFilled = 49,
+        Filled = 50,
+        DoneForDay = 51,
+        Canceled = 52,
+        Replaced = 53,
+        PendingCancel = 54,
+        Stopped = 55,
+        Rejected = 56,
+        Suspended = 57,
+        PendingNew = 65,
+        Expired = 67,
+        Restated = 68,
+        PendingReplace = 69,
+        InternalReject = 99
+    }
+    public enum Side : byte
+    {
+        Buy = (byte)1,
+        Sell = (byte)2,
+        SellShort = (byte)5,
+    }
+    public enum OrdType : byte
+    {
+        Market = (byte)49,
+        Limit = (byte)50,
+        Stop = (byte)51,
+        StopLimit = (byte)52,
+        MarketIfTouched = (byte)74,
+        Pegged = (byte)80,
+    }
+    public class Order 
+    {
+        [PrimaryKey]
+        public string Symbol { get; set; }
+
+        [PrimaryKey]
+        public string ParentOrderID { get; set; }
+
+        public int OrderQty { get; set; }
+
+
+        public int LastQty { get; set; }
+
+
+        public int LeavesQty { get; set; }
+
+        [PrimaryKey]
+        public string ClOrdID { get; set; }
+
+
+        public double LastPx { get; set; }
+
+
+        public double AvgPx { get; set; }
+        [PrimaryKey]
+        public string ID { get; set; }
+
+        public double OrderPx { get; set; }
+
+        public string SxOrderID { get; set; }
+        [PrimaryKey]
+        public OrdStatus OrderStatus { get; set; }
+        public Side OrderSide { get; set; }
+        public OrdType OrdType { get; set; }
+        public DateTime SubmitTime { get; set; }
+
+        public DateTime LastUpdateTime { get; set; }
+
+        public Order Clone()
+        {
+            return (Order)this.MemberwiseClone();
+            
+        }
+
+        public override string ToString()
+        {
+            StringWriter writer = new StringWriter();
+            writer.WriteLine(" ParentOrderID: {0} - ID: {1} - Side: {2} - Qty: {3} - Status: {4} - LastQty: {5} - LeavesQty: {6} - AvgPrice: {7} - OrderPrice: {8}",
+                ParentOrderID,ID,OrderSide,OrderQty,OrderStatus,LastQty,LeavesQty,AvgPx,OrderPx);
+            return writer.ToString();
+        }
+    }
+    
+}
+
+    

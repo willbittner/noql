@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dashx.CEP.Datastructures
+{
+    public enum RouteType : byte
+    {
+        WAPALGO = 4,
+        EXTERNALALGO = 3,
+        ALGO = 2,
+        DMA = 1,
+        Undefined = 0
+    }
+
+
+
+
+
+    public class Route
+    {
+        public string Name;
+        public RouteType Type;
+    }
+    public class OrderRouteManager
+    {
+
+        Dictionary<string,Route> Routes = new Dictionary<string, Route>();
+        public void AddRoute(string RouteName, Route route)
+        {
+            if (!Routes.ContainsKey(RouteName)) Routes.Add(RouteName, route);
+            else Routes[RouteName] = route;
+        }
+
+        public Route GetRoute(string RouteName)
+        {
+            Route retRoute;
+            if (!Routes.TryGetValue(RouteName, out retRoute)) return null;
+            return retRoute;
+        }
+    }
+}
