@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{C5BA91FF-AACC-4470-A653-4A610B1E4DC2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NoQL.Quickstart/Program.cs">
+    <Files>
+      <File FileName="DistributedRamDB.cs" Line="129" Column="40" />
+      <File FileName="NewExpressions/CEPExpressionTree.cs" Line="206" Column="21" />
+      <File FileName="NewExpressions/YoloQL.cs" Line="137" Column="56" />
+      <File FileName="RamDB/TestRamDB.cs" Line="8" Column="23" />
+      <File FileName="RemoteHooks/RESTInterface.cs" Line="277" Column="9" />
+      <File FileName="NoQL.Quickstart/Program.cs" Line="1" Column="1" />
+      <File FileName="Utilities.cs" Line="1" Column="1" />
+      <File FileName="Processor.cs" Line="1" Column="1" />
+      <File FileName="Blocks/Factories/BlockFactory.cs" Line="1" Column="1" />
+      <File FileName="Adapters/CSVFileOutputAdapter.cs" Line="1" Column="1" />
+      <File FileName="ExtensionMethods.cs" Line="1" Column="1" />
+      <File FileName="YoloFactory/ExpressionBlockFactory.cs" Line="1" Column="1" />
+      <File FileName="YoloFactory/IExpressionBlockFactory.cs" Line="216" Column="6" />
+      <File FileName="NewExpressions/INewCEPExpression.cs" Line="1" Column="1" />
+      <File FileName="NewExpressions/Express2.cs" Line="93" Column="26" />
+      <File FileName="NewExpressions/NewComponent.cs" Line="1" Column="1" />
+      <File FileName="YoloLambda/YoloMaker.cs" Line="1" Column="1" />
+      <File FileName="NewExpressions/YoloCompile.cs" Line="2" Column="1" />
+      <File FileName="RemoteHooks/RESTBackend.cs" Line="1" Column="1" />
+      <File FileName="NewExpressions/BaseInputAdapter.cs" Line="142" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NoQL.Core" expanded="True">
+            <Node name="NoQL.Core" expanded="True">
+              <Node name="Adapters" expanded="True" />
+              <Node name="Blocks" expanded="True">
+                <Node name="Factories" expanded="True" />
+              </Node>
+              <Node name="Components" expanded="True" />
+              <Node name="Connections" expanded="True" />
+              <Node name="NewExpressions" expanded="True" />
+              <Node name="RemoteHooks" expanded="True" />
+              <Node name="Tagging" expanded="True" />
+              <Node name="Time" expanded="True" />
+              <Node name="YoloFactory" expanded="True" />
+              <Node name="YoloLambda" expanded="True" />
+              <Node name="YoloQLBlocks" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.NoQL.Quickstart PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/wkbittner/noql/Connections/Connection.cs" relfile="Connections/Connection.cs" line="17" column="106" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

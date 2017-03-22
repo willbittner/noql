@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NExtra.WPF</name>
+    </assembly>
+    <members>
+        <member name="T:NExtra.WPF.Controls.ThreeState">
+            <summary>
+            ThreeState state enum. Undetermined means that a
+            checbox has sub-groups that are both checked and
+            unchecked.
+            </summary>
+            <remarks>
+            Author:     Daniel Saidi [daniel.saidi@gmail.com]
+            Link:       http://danielsaidi.github.com/nextra
+            </remarks>
+        </member>
+        <member name="T:NExtra.WPF.Extensions.CheckBox_Extensions">
+            <summary>
+            Extension methods for System.Windows.Controls.CheckBox.
+            </summary>
+            <remarks>
+            Author:     Daniel Saidi [daniel.saidi@gmail.com]
+            Link:       http://danielsaidi.github.com/nextra
+            </remarks>
+        </member>
+        <member name="T:NExtra.WPF.Extensions.RadioButton_Extensions">
+            <summary>
+            Extension methods for System.Windows.Controls.RadioButton.
+            </summary>
+            <remarks>
+            Author:     Daniel Saidi [daniel.saidi@gmail.com]
+            Link:       http://danielsaidi.github.com/nextra
+            </remarks>
+        </member>
+        <member name="T:NExtra.WPF.Extensions.Window_Extensions">
+            <summary>
+            Extension methods for System.Windows.Window.
+            </summary>
+            <remarks>
+            Author:     Daniel Saidi [daniel.saidi@gmail.com]
+            Link:       http://danielsaidi.github.com/nextra
+            </remarks>
+        </member>
+    </members>
+</doc>
