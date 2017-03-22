@@ -27,7 +27,7 @@ A block can be user created and combined of a complex embedded network of blocks
 Code re-use is acheived by creating networks of blocks and pipes that are effective "functions" in a block and used later on just like a simple block regardless of what is underneath
 
 # Example
-   using System;
+```   using System;
    using NoQL.CEP.NewExpressions;
 
    using NoQL.CEP;
@@ -46,4 +46,4 @@ Code re-use is acheived by creating networks of blocks and pipes that are effect
       expr1.Send(4);
      }
     }
-   }
+   } ```
